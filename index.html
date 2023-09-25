@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap5/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" media="screen">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="font/stylesheet.css" media="screen">
+	<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-top">
+				<div class="container">
+					<div class="header-in d-flex">
+						<nav class="header-nav">
+							<div class="header-nav-left">
+								<a href="!#" class="header-link active">Продукты</a>
+								<a href="!#" class="header-link">Фермеры</a>
+								<a href="!#" class="header-link">Рецепты</a>
+								<a href="!#" class="header-link">Блог</a>
+								<a href="!#" class="header-link">Рестораны <span>new</span></a>
+							</div>
+							<div class="header-nav-right">
+								<a href="!#" class="header-link">Путешествия <span>new</span> <img src="./images/more.svg" alt=""></a>
+								<a href="!#" class="header-link">Стать продавцом <img src="./images/more.svg" alt=""></a>
+							</div>
+						</nav>
+						<div class="header-actions">
+							<a href="!#" class="header-actions-link">
+								<img src="./images/loc.svg" alt="">
+								Москва
+							</a>
+							<a href="!#" class="header-actions-link">Обратная связь</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-bottom">
+				<div class="container">
+					<div class="header-block">
+						<a href="./index.html" class="logo">
+							<img src="./images/logo.svg" alt="">
+						</a>
+						<label for="catalog" class="catalog-btn">
+							<div class="bars-icon">
+								<span class="line1"></span>
+								<span class="line2"></span>
+								<span class="line1"></span>
+							</div>
+							<span>Каталог</span>
+						</label>
+						<div class="search-content">
+							<img src="./images/search.svg" alt="" class="search-img">
+							<input type="search" placeholder="Поиск продуктов и фермеров">
+							<button class="search-btn">Найти</button>
+						</div>
+						
+						<div class="header-bottom-actions">
+							<div class="favorites-and-cart">
+								<a href="!#" class="favorites-icon">
+									<img src="./images/header-heart.svg" alt="">
+								</a>
+								<a href="!#" class="cart-icon">
+									<img src="images/basket-icon.png" alt="">
+								</a>
+							</div>
+							<a href="#!" class="login-btn">
+								<img src="images/login-icon.png" alt="">Войти
+							</a>
+							<a href="#!" class="menu-btn"><img src="images/menu-icon.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="category">
+				<div class="container">
+					<div class="category__main">
+						<div class="bread-crumbs">
+							<nav aria-label="breadcrumb">
+								<div class="breadcrumb">
+									<div class="breadcrumb-item">
+										<a href="#!">Главная</a>
+									</div>
+									<div class="breadcrumb-item">
+										<a href="#!" class="breadcrumb-item active">Ярмарка на
+											Матвеевской</a>
+									</div>
+								</div>
+							</nav>
+						</div>
+
+						<h2 class="category__main-title">Ярмарка на Матвеевской</h2>
+						<img src="./images/category-main-img.svg" alt="" class="category-main-img">
+					</div>
+				</div>
+			</section>
+
+			<div class="main-sec">
+				<div class="container">
+					<div class="adaptive-categories-filter">
+						<a href="!#" class="adaptive-link">
+							<span class="link-img">
+								<img src="./images/leftawards.svg" alt="">
+							</span>
+							<span class="adaptive-subtitle">Назад</span>
+						</a>
+						<div class="adaptive-link active">
+							<span class="link-img">
+								<img src="./images/tent_2.svg" alt="">
+							</span>
+							<span class="adaptive-subtitle">Ярмарка на Матвеевской</span>
+						</div>
+						<a href="!#" class="adaptive-link">
+							<span class="link-img"></span>
+							<span class="adaptive-subtitle">Яйца и молочные продукты</span>
+						</a>
+						<a href="!#" class="adaptive-link">
+							<span class="link-img"></span>
+							<span class="adaptive-subtitle">Сыры</span>
+						</a>
+						<a href="!#" class="adaptive-link">
+							<span class="link-img"></span>
+							<span class="adaptive-subtitle">Овощи и фрукты</span>
+						</a>
+					</div>
+
+					<div class="main__sec-content">
+						<div class="row">
+							<div class="col-lg-3">
+								<div class="main-aside">
+									<div class="thematic-filters">
+										<div class="side-filter side-filter-one">
+											<span class="thematic-filters__subtitle">Способ получения</span>
+											<div class="thematic-filters-group">
+												<div class="side-drop one">
+													<div class="check-btn">
+														<label class="control control--radio mb-3">
+															<input type="radio" name="radio">
+															<div class="control__indicator"></div>
+															<span>Есть доставка</span>
+														</label>
+													</div>
+
+													<div class="filter-list">
+														<label class="control control--checkbox">
+															<input type="checkbox">
+															<div class="control__indicator"></div>
+															<span>Курьерская доставка</span>
+														</label>
+														<label class="control control--checkbox">
+															<input type="checkbox">
+															<div class="control__indicator"></div>
+															<span>Доставка по России</span>
+														</label>
+														<label class="control control--checkbox">
+															<input type="checkbox">
+															<div class="control__indicator"></div>
+															<span>Доставка сегодня</span>
+														</label>
+														<label class="control control--checkbox">
+															<input type="checkbox">
+															<div class="control__indicator"></div>
+															<span>Доставка бесплатно</span>
+														</label>
+													</div>
+												</div>
+												<div class="side-drop two">
+													<label class="control control--radio">
+														<input type="radio" name="radio"/>
+														<div class="control__indicator"></div>
+														<span>Есть самовывоз</span>
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="side-filter side-filter-sale">
+											<span class="thematic-filters__subtitle">Скидки</span>
+											<label class="control control--checkbox">
+												<input type="checkbox">
+												<div class="control__indicator"></div>
+												<span>Есть промокод</span>
+												<img src="./images/percent.svg" alt="">
+											</label>
+										</div>
+
+										<div class="side-filter side-filter-two">
+											<span class="thematic-filters__subtitle">Способ оплаты</span>
+											<div class="thematic-filters-group">
+												<label class="control control--checkbox">
+													<input type="checkbox">
+													<div class="control__indicator"></div>
+													<span>Есть онлайн-оплата</span>
+												</label>
+												<label class="control control--checkbox">
+													<input type="checkbox">
+													<div class="control__indicator"></div>
+													<span>Есть оплата баллами Урожай</span>
+												</label>
+											</div>
+										</div>
+
+										<div class="side-filter-three">
+											<span class="thematic-filters__subtitle">Дата доставки</span>
+
+											<div class="dropdown">
+												<button class="drop-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+													<div class="select-date" id="select">
+														<span>Выбрать из списка</span>
+														<img src="./images/down.svg" alt="" class="slelct-date-img">
+													</div>
+												</button>
+												<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+												  <li><a class="dropdown-item" href="#!">25 сентября</a></li>
+												  <li><a class="dropdown-item" href="#!">26 сентября</a></li>
+												  <li><a class="dropdown-item" href="#!">27 сентября</a></li>
+												  <li><a class="dropdown-item" href="#!">28 сентября</a></li>
+												  <li><a class="dropdown-item" href="#!">29 сентября</a></li>
+												  <li><a class="dropdown-item" href="#!">30 сентября</a></li>
+												</ul>
+											</div>
+											
+										</div>
+									</div>
+
+									<label for="offer-modal" class="offer-subscription">
+										<div class="offer-subscription-content">
+											<p class="offer-subscription-title">Доставим бесплатно по подписке Всё Своё</p>
+											<span class="offer-subscription-link">Как подключить подписку</span>
+										</div>
+										<img src="./images/subscription-offer.webp" alt="">
+									</label>
+									<div class="catogories-filter">
+										<a href="!#" class="categories-link link1">
+											<img src="./images/left-green.svg" alt="">
+											<span>Ярмарки</span>
+										</a>
+										<p class="categories-filter-title">Ярмарка на Матвеевской</p>
+										<a href="!#" class="categories-link">
+											<span>Яйца и молочные продукты</span>
+											<img src="./images/right.svg" alt="">
+										</a>
+										<a href="!#" class="categories-link">
+											<span>Сыры</span>
+											<img src="./images/right.svg" alt="">
+										</a>
+										<a href="!#" class="categories-link">
+											<span>Овощи и фрукты</span>
+											<img src="./images/right.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-9">
+								<div class="category-products-header">
+									<h5 class="category-title">210 товаров</h5>
+									<div class="category-sorts">
+										<div class="sorting">
+											<span>Сортировка</span>
+											<select name="sort-filter" id="sort-filter">
+												<option value="">По популярности</option>
+												<option value="">Сначала дорогие</option>
+												<option value="">Сначала дешёвые</option>
+												<option value="">По рейтингу</option>
+												<option value=""> По новизне</option>
+											</select>
+											<img src="./images/down.svg" alt="">
+										</div>
+										<button class="sorting-mob">
+											<img src="./images/sort.svg" alt="">
+										</button>
+										<button class="filters-btn">
+											<img src="./images/slider.svg" alt="">
+										</button>
+									</div>
+								</div>
+
+								<div class="row category-rov">
+									<div class="col-lg-3">
+										<a href="!#" class="category-card">
+											<div class="category-card-img-wrap">
+												<label class="category-card-like">
+													<input id="like" type="checkbox" hidden>
+													<div class="category-like-img">
+														<svg width="16" height="15" fill="none" stroke="#42AB44FF" stroke-linecap="round"
+															stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+															xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+															</path>
+														</svg>
+													</div>
+												</label>
+												<div class="card-img">
+													<img class="category-card-img" src="./images/honey.png" alt="">
+												</div>
+											</div>
+											<p class="category-card-title">Мёд липовый, 700 г.</p>
+											<p class="category-card-price">
+												<span>661 <img src="./images/ruble.svg" alt=""></span>/ 700 г
+											</p>
+											<button class="category-card-btn">В корзину</button>
+										</a>
+									</div>
+									<div class="col-lg-3">
+										<a href="!#" class="category-card">
+											<div class="category-card-img-wrap">
+												<label class="category-card-like">
+													<input id="like" type="checkbox" hidden>
+													<div class="category-like-img">
+														<svg width="16" height="15" fill="none" stroke="#42AB44FF" stroke-linecap="round"
+															stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+															xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+															</path>
+														</svg>
+													</div>
+												</label>
+												<div class="card-img">
+													<img class="category-card-img" src="./images/honey-2.png" alt="">
+												</div>
+											</div>
+											<p class="category-card-title">Мёд липовый, 700 г.</p>
+											<p class="category-card-price">
+												<span>661 <img src="./images/ruble.svg" alt=""></span>/ 700 г
+											</p>
+											<button class="category-card-btn">В корзину</button>
+										</a>
+									</div>
+									<div class="col-lg-3">
+										<a href="!#" class="category-card">
+											<div class="category-card-img-wrap">
+												<label class="category-card-like">
+													<input id="like" type="checkbox" hidden>
+													<div class="category-like-img">
+														<svg width="16" height="15" fill="none" stroke="#42AB44FF" stroke-linecap="round"
+															stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+															xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+															</path>
+														</svg>
+													</div>
+												</label>
+												<div class="card-img">
+													<img class="category-card-img" src="./images/main-card-img1.png" alt="">
+												</div>
+											</div>
+											<p class="category-card-title">Мёд липовый, 700 г.</p>
+											<p class="category-card-price">
+												<span>661 <img src="./images/ruble.svg" alt=""></span>/ 700 г
+											</p>
+											<button class="category-card-btn">В корзину</button>
+										</a>
+									</div>
+									<div class="col-lg-3">
+										<a href="!#" class="category-card">
+											<div class="category-card-img-wrap">
+												<label class="category-card-like">
+													<input id="like" type="checkbox" hidden>
+													<div class="category-like-img">
+														<svg width="16" height="15" fill="none" stroke="#42AB44FF" stroke-linecap="round"
+															stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+															xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+															</path>
+														</svg>
+													</div>
+												</label>
+												<div class="card-img">
+													<img class="category-card-img" src="./images/main-card-img1.png" alt="">
+												</div>
+											</div>
+											<p class="category-card-title">Мёд липовый, 700 г.</p>
+											<p class="category-card-price">
+												<span>661 <img src="./images/ruble.svg" alt=""></span>/ 700 г
+											</p>
+											<button class="category-card-btn">В корзину</button>
+										</a>
+									</div>
+
+									<div class="col-lg-3">
+										<a href="!#" class="category-card">
+											<div class="category-card-img-wrap">
+												<label class="category-card-like">
+													<input id="like" type="checkbox" hidden>
+													<div class="category-like-img">
+														<svg width="16" height="15" fill="none" stroke="#42AB44FF" stroke-linecap="round"
+															stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+															xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+															</path>
+														</svg>
+													</div>
+												</label>
+												<div class="card-img">
+													<img class="category-card-img" src="./images/main-card-img1.png" alt="">
+												</div>
+											</div>
+											<p class="category-card-title">Мёд липовый, 700 г.</p>
+											<p class="category-card-price">
+												<span>661 <img src="./images/ruble.svg" alt=""></span>/ 700 г
+											</p>
+											<button class="category-card-btn">В корзину</button>
+										</a>
+									</div>
+									<div class="col-lg-3">
+										<a href="!#" class="category-card">
+											<div class="category-card-img-wrap">
+												<label class="category-card-like">
+													<input id="like" type="checkbox" hidden>
+													<div class="category-like-img">
+														<svg width="16" height="15" fill="none" stroke="#42AB44FF" stroke-linecap="round"
+															stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+															xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+															</path>
+														</svg>
+													</div>
+												</label>
+												<div class="card-img">
+													<img class="category-card-img" src="./images/main-card-img1.png" alt="">
+												</div>
+											</div>
+											<p class="category-card-title">Мёд липовый, 700 г.</p>
+											<p class="category-card-price">
+												<span>661 <img src="./images/ruble.svg" alt=""></span>/ 700 г
+											</p>
+											<button class="category-card-btn">В корзину</button>
+										</a>
+									</div>
+									<div class="col-lg-3">
+										<a href="!#" class="category-card">
+											<div class="category-card-img-wrap">
+												<label class="category-card-like">
+													<input id="like" type="checkbox" hidden>
+													<div class="category-like-img">
+														<svg width="16" height="15" fill="none" stroke="#42AB44FF" stroke-linecap="round"
+															stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+															xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+															</path>
+														</svg>
+													</div>
+												</label>
+												<div class="card-img">
+													<img class="category-card-img" src="./images/main-card-img1.png" alt="">
+												</div>
+											</div>
+											<p class="category-card-title">Мёд липовый, 700 г.</p>
+											<p class="category-card-price">
+												<span>661 <img src="./images/ruble.svg" alt=""></span>/ 700 г
+											</p>
+											<button class="category-card-btn">В корзину</button>
+										</a>
+									</div>
+									<div class="col-lg-3">
+										<a href="!#" class="category-card">
+											<div class="category-card-img-wrap">
+												<label class="category-card-like">
+													<input id="like" type="checkbox" hidden>
+													<div class="category-like-img">
+														<svg width="16" height="15" fill="none" stroke="#42AB44FF" stroke-linecap="round"
+															stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+															xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+															</path>
+														</svg>
+													</div>
+												</label>
+												<div class="card-img">
+													<img class="category-card-img" src="./images/main-card-img1.png" alt="">
+												</div>
+											</div>
+											<p class="category-card-title">Мёд липовый, 700 г.</p>
+											<p class="category-card-price">
+												<span>661 <img src="./images/ruble.svg" alt=""></span>/ 700 г
+											</p>
+											<button class="category-card-btn">В корзину</button>
+										</a>
+									</div>
+									
+									<div class="col-lg-3">
+										<a href="!#" class="category-card">
+											<div class="category-card-img-wrap">
+												<label class="category-card-like">
+													<input id="like" type="checkbox" hidden>
+													<div class="category-like-img">
+														<svg width="16" height="15" fill="none" stroke="#42AB44FF" stroke-linecap="round"
+															stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+															xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+															</path>
+														</svg>
+													</div>
+												</label>
+												<div class="card-img">
+													<img class="category-card-img" src="./images/main-card-img1.png" alt="">
+												</div>
+											</div>
+											<p class="category-card-title">Мёд липовый, 700 г.</p>
+											<p class="category-card-price">
+												<span>661 <img src="./images/ruble.svg" alt=""></span>/ 700 г
+											</p>
+											<button class="category-card-btn">В корзину</button>
+										</a>
+									</div>
+									<div class="col-lg-3">
+										<a href="!#" class="category-card">
+											<div class="category-card-img-wrap">
+												<label class="category-card-like">
+													<input id="like" type="checkbox" hidden>
+													<div class="category-like-img">
+														<svg width="16" height="15" fill="none" stroke="#42AB44FF" stroke-linecap="round"
+															stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+															xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+															</path>
+														</svg>
+													</div>
+												</label>
+												<div class="card-img">
+													<img class="category-card-img" src="./images/main-card-img1.png" alt="">
+												</div>
+											</div>
+											<p class="category-card-title">Мёд липовый, 700 г.</p>
+											<p class="category-card-price">
+												<span>661 <img src="./images/ruble.svg" alt=""></span>/ 700 г
+											</p>
+											<button class="category-card-btn">В корзину</button>
+										</a>
+									</div>
+									<div class="col-lg-3">
+										<a href="!#" class="category-card">
+											<div class="category-card-img-wrap">
+												<label class="category-card-like">
+													<input id="like" type="checkbox" hidden>
+													<div class="category-like-img">
+														<svg width="16" height="15" fill="none" stroke="#42AB44FF" stroke-linecap="round"
+															stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+															xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+															</path>
+														</svg>
+													</div>
+												</label>
+												<div class="card-img">
+													<img class="category-card-img" src="./images/main-card-img1.png" alt="">
+												</div>
+											</div>
+											<p class="category-card-title">Мёд липовый, 700 г.</p>
+											<p class="category-card-price">
+												<span>661 <img src="./images/ruble.svg" alt=""></span>/ 700 г
+											</p>
+											<button class="category-card-btn">В корзину</button>
+										</a>
+									</div>
+									<div class="col-lg-3">
+										<a href="#!" class="card-offer">
+											<img src="images/card-offer-img.svg" alt="">
+											<h6 class="card-offer-title">Хотите больше предложений?</h6>
+											<span>Сообщите нам</span>
+										</a>
+									</div>
+								</div>
+
+								<!-- upload more -->
+								<div class="category-add-btn">
+									<img src="./images/repaet.svg" alt="">
+									<span>Загрузить ещё 12</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-top">
+					<a href="/" class="footer-logo">
+						<img src="./images/white-logo.svg" alt="">
+					</a>
+					<p class="footer-copyright">
+						© 2000-2023 АО «Россельхозбанк»
+						<br>
+						Генеральная лицензия Банка России № 3349 от 12 августа 2015
+					</p>
+					<div class="footer-socials">
+						<a href="https://vk.com/svoerodnoe.rshb" target="_blank" class="footer-social">
+							<img src="./images/vk.svg" alt="">
+						</a>
+						<a href="https://t.me/svoe_rodnoe" target="_blank" class="footer-social">
+							<img src="./images/tg.svg" alt="">
+							</svg>
+						</a>
+						<a href="https://zen.yandex.ru/id/6114c1c35b92092dbd518479" target="_blank" class="footer-social">
+							<img src="./images/zen.svg" alt="">
+						</a>
+						<a href="https://www.youtube.com/channel/UC0n4Diq6hvblxeq5Ssih1Wg" target="_blank" class="footer-social">
+							<img src="./images/yt.svg" alt="">
+						</a>
+					</div>
+					<p class="footer-contacts">
+						119034, г. Москва, Гагаринский пер., д.3
+						<br>
+						E-mail:
+						<a href="mailto:office@rshb.ru">office@rshb.ru</a>
+					</p>
+				</div>
+				<div class="footer-bottom">
+					<div class="footer-links">
+						<a href="https://www.rshb.ru//pd-policy" target="_blank" class="footer-link link1">
+							Политика обработки персональных данных
+						</a>
+						<a href="/proxy/api/v1/file-proxy/b2c/docs/terms.pdf" target="_blank" class="footer-link">
+							Пользовательское соглашение
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/jquery-3.7.0.min.js"></script>
+	<script src="libs/bootstrap5/popper.js"></script>
+	<script src="libs/bootstrap5/bootstrap.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
