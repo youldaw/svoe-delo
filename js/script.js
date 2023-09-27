@@ -12,7 +12,6 @@ $(function () {
         $(modal3).toggleClass('active');
     });
 
-
 });
 
 

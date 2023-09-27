@@ -1945,6 +1945,32 @@ header .favorites-and-cart a {
 
 
 /* aside modal */
+
+
+.nav--vertical li {
+  width: 100%;
+}
+.nav--vertical li.dropmenu ul {
+  display: none;
+}
+.nav--vertical li.dropmenu:hover > ul {
+  display: block;
+}
+
+.nav--vertical > li ul {
+  list-style-type: none;
+  position: absolute;
+  left: 99%;
+}
+.nav--vertical > li ul.level1 {
+  top: 0;
+}
+
+
+
+
+
+
 .aside-catalog {
 	position: fixed;
 	top: 0;
@@ -1983,6 +2009,17 @@ header .favorites-and-cart a {
 	color: #fff;
 }
 
+.aside-catalog-modal {
+	position: fixed;
+	left: -100%;
+	top: 0;
+	z-index: 100;
+	transition: .4s all ease;
+}
+.aside-catalog-modal.active {
+	left: 0;
+}
+
 .aside-catalog__content {
 	position: relative;
 	width: 316px;
@@ -2000,11 +2037,13 @@ header .favorites-and-cart a {
 }
 
 .aside-catalog__list {
-	padding: 0 20px 36px;
+	padding-bottom: 36px;
 	height: calc(100vh - 88px);
 	box-sizing: border-box;
-	overflow: hidden;
-	overflow-y: auto;
+	overflow: auto;
+}
+.aside-catalog__list > li {
+	padding: 0 20px;
 }
 
 .aside-catalog__list::-webkit-scrollbar {
@@ -2038,6 +2077,10 @@ header .favorites-and-cart a {
     align-items: center;
     color: #1c1c1c;
     text-decoration: none;
+	width: 100%;
+}
+.aside-catalog-main-category:hover {
+	color: #42ab44;
 }
 
 .aside-catalog-main-category:hover .aside-catalog-main-category__hover-bg,
@@ -2085,6 +2128,7 @@ header .favorites-and-cart a {
     position: relative;
     width: 12px;
     height: 12px;
+	margin-top: -4px;
 }
 
 
@@ -2113,7 +2157,6 @@ header .favorites-and-cart a {
 .aside-catalog-selected-category__content {
     margin-right: 44px;
     width: calc(100% - 244px);
-	/* display: none; */
 }
 
 .aside-catalog-selected-category__content_without-banners {
@@ -2127,11 +2170,6 @@ header .favorites-and-cart a {
     color: #1c1c1c;
     text-decoration: none;
     pointer-events: none;
-}
-
-
-.aside-catalog-selected-category__header-icon {
-    /* display: none; */
 }
 
 .aside-catalog-selected-category__title {
@@ -2216,6 +2254,37 @@ header .favorites-and-cart a {
     color: #1c1c1c;
     text-decoration: underline
 }
+
+.aside-modal .modal-dialog {
+	max-width: 316px;
+	width: 100%;
+	margin: 0;
+}
+.aside-modal .modal-body {
+	border: none;
+	padding: 0;
+}
+
+.aside-modal .modal-close {
+	padding: 0;
+	border: none;
+	min-width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 20px;
+	right: -70px;
+	background: rgba(255,255,255, .4);
+	color: #fff;
+	font-size: 24px;
+}
+
+
+
+
 
 @media only screen and (max-width:1199px) {
 	.aside-catalog-selected-category {
