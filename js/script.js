@@ -6,6 +6,51 @@ $(function () {
 
 
 
+  $(document).on("mouseenter", ".header-block__mid-catalog", function() {
+    $(".header-catalog").addClass("active")
+  }),
+  
+  $(document).on("mouseleave", ".header-block__mid-catalog", function() {
+      $(".header-catalog").is(":hover") || $(".header-catalog").removeClass("active")
+  }),
+  
+  $(document).on("mouseleave", ".header-catalog", function() {
+      $(".header-block__mid-catalog").is(":hover") || $(".header-catalog").removeClass("active")
+  }),
+  
+  $(".header-catalog__inner.active").size() < 1 && $(".header-catalog__left ul li:first, .header-catalog__inner:first").addClass("active"),
+
+
+  $(document).on("mouseenter", ".header-catalog__left ul li a", function () {
+    var e = $(this).parent("li"),
+      t = e.index();
+    e.addClass("active").siblings().removeClass("active"), $(".header-catalog__inner").eq(t).addClass("active").siblings().removeClass("active")
+  }),
+  
+  $(document).on("mouseenter", ".header-block__mid-catalog", function () {
+    $(".header-catalog").addClass("active")
+  }),
+  
+  $(document).on("mouseleave", ".header-block__mid-catalog", function () {
+    $(".header-catalog").is(":hover") || $(".header-catalog").removeClass("active")
+  }),
+  
+  $(document).on("mouseleave", ".header-catalog", function () {
+    $(".header-block__mid-catalog").is(":hover") || $(".header-catalog").removeClass("active")
+  }),
+  
+  $(".header-catalog__inner.active").size() < 1 && $(".header-catalog__left ul li:first, .header-catalog__inner:first").addClass("active"), 
+
+
+
+
+
+
+
+
+
+
+
   $('.menu-btn').on('click', function (e) {
     e.preventDefault();
     let modal3 = $('.modal3')
@@ -45,7 +90,7 @@ $(function () {
   $('.filter__modal-data-link').on('click', function (e) {
     e.preventDefault();
     $(this).toggleClass('active');
-  
+
     if ($('.filter__modal-data-link.active').length > 0) {
       $('.filter__modal-btn1').addClass('active');
       $('.filter__modal-btn2').addClass('active');
@@ -54,7 +99,7 @@ $(function () {
       $('.filter__modal-btn2').removeClass('active');
     }
   });
-  
+
 
 
 });
